@@ -1,0 +1,39 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "a helper for testing and git",
+  "main": "helloworld.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/12oman/example.git"
+  },
+  "keywords": [
+    "git",
+    "testing"
+  ],
+  "author": "12oman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/12oman/example/issues"
+  },
+  "homepage": "https://github.com/12oman/example#readme",
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.5.0",
+    "jest": "^29.5.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "testMatch": [
+      "**/__tests__/**/*.js?(x)",
+      "**/?(*.)+(spec|test).js?(x)"
+    ]
+  }
+}
